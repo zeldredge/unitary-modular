@@ -1,15 +1,11 @@
-# unitary-modular
-Code for the GHZ state preparation simulation and circuit placement outlined in Bapat et al 2018
+This code is intended to reproduce the results in "Unitary Entanglement Generation in Hierarchical Quantum Networks", Bapat et al 2018. We include code and notebooks which allow for the simulation of GHZ state creation on arbitrary graphs as well as performing circuit placement on hierarchical products.
 
-Permission is granted for anyone to copy, use, modify, or distribute the
-accompanying programs and documents for any purpose, provided this copyright
-notice is retained and prominently displayed, along with a complete citation of
-the published version of the paper: (will add when available)
+Required Python packages:
+-NumPy
+-NetworkX
+-Matplotlib
+-Pandas
 
-The programs and documents are distributed without any warranty, express or
-implied.
+Additionally, we use the Metis graph partitioning package as a subroutine in the circuit placement code. Therefore, to run this code, you must also install Metis from the following link: http://glaros.dtc.umn.edu/gkhome/metis/metis/download
 
-These programs were written for research purposes only, and are meant to
-demonstrate and reproduce the main results obtained in the paper.
-
-All use of these programs is entirely at the user's own risk.
+This code should run on Mac and Linux systems.
