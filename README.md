@@ -4,12 +4,7 @@ Code for the GHZ state preparation simulation and circuit placement outlined in 
 Permission is granted for anyone to copy, use, modify, or distribute the
 accompanying programs and documents for any purpose, provided this copyright
 notice is retained and prominently displayed, along with a complete citation of
-the published version of the paper:
-
- ______________________________________________________________________________
-|                                                                              |
-| [when available]                                                             |
-|______________________________________________________________________________|
+the published version of the paper: (will add when available)
 
 The programs and documents are distributed without any warranty, express or
 implied.
