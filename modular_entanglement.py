@@ -217,8 +217,11 @@ def hier_fit_fn(x, alpha,unit_size):
     The total distance that needs to be traversed by two-qubit gates to create
     the GHZ state.
     """
-    hier_fit = x**(log(1/alpha, 
-        unit_size))*(1 - 2/(1 - 1/alpha))*alpha + 2/(1-1/alpha)
+    #Note that, as dicussed in the paper, we convert alpha (the weight that
+    # scales the probabilities) to 1/alpha (to get estimated times)
+    levels = log(x, unit_size)
+    beta = 1/alpha
+    hier_fit = (beta**levels + beta**(levels - 1)  - 2)/(beta - 1)
     return hier_fit
 
 ########################################
